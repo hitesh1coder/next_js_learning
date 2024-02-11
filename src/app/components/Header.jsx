@@ -17,6 +17,12 @@ const Header = () => {
       </button>
       <button
         className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        onClick={() => handleNavigate("/productlist")}
+      >
+        All Products
+      </button>
+      <button
+        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
         onClick={() => handleNavigate("/cart")}
       >
         Cart
