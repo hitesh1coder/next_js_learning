@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 export default function Page() {
   const [product, setProduct] = useState([]);
   const fetchProducts = async () => {
@@ -22,13 +22,16 @@ export default function Page() {
             className="bg-slate-50 w-72 h-60 transition-all duration-500 hover:scale-105 cursor-pointer rounded-lg text-blue-950 p-2 flex flex-col justify-center items-center"
             key={item.id}
           >
-            <img
-              className="w-40 h-40 object-cover"
+            <Image
+              loading="lazy"
+              className="w-32 h-40 object-cover rounded-md"
               src={item.images[0]}
+              width={200}
+              height={250}
               alt={item.title}
             />
             <h1>{item.title}</h1>
-            <h2 className="text-blue-950">{item.price} $</h2>
+            <h2>Price : {item.price} $</h2>
           </div>
         ))}
       </div>
