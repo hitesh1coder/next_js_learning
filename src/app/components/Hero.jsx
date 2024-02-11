@@ -1,10 +1,7 @@
-import React from "react";
-
 const Hero = ({ content }) => {
-  console.log(content);
   return (
-    <div className="w-full h-screen flex items-center justify-center text-6xl">
-      {content} ☺️
+    <div className="w-full h-full  flex flex-col items-center justify-center">
+      <h1 className=" text-6xl">{content} ☺️</h1>
     </div>
   );
 };
