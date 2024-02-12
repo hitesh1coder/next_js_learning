@@ -8,39 +8,39 @@ const Header = () => {
     router.push(page);
   };
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-9 justify-center">
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/")}
       >
         Home
       </button>
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/productlist")}
       >
         All Products
       </button>
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/productlistserver")}
       >
         Server Products
       </button>
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/cart")}
       >
         Cart
       </button>
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/users")}
       >
         Users
       </button>
       <button
-        className="text-black bg-white/90 hover:bg-white/65 px-3 py-1 rounded-md"
+        className=" hover:bg-white/65 text-xl px-2 py-1 rounded-md"
         onClick={() => handleNavigate("/study")}
       >
         Study

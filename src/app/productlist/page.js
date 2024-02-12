@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+
 export default function Page() {
   const [product, setProduct] = useState([]);
   const fetchProducts = async () => {
@@ -15,8 +16,12 @@ export default function Page() {
 
   return (
     <div>
-      <h1>Product List</h1>
-      <div className="flex w-full h-full flex-wrap gap-4  justify-center items-center">
+      <h1 className="text-3xl text-center my-4">
+        Product List from Client Component
+      </h1>
+      <div
+        className={` flex w-full h-full flex-wrap gap-4  justify-center items-center`}
+      >
         {product?.map((item) => (
           <div
             className="bg-slate-50 w-72 h-60 transition-all duration-500 hover:scale-105 cursor-pointer rounded-lg text-blue-950 p-2 flex flex-col justify-center items-center"
