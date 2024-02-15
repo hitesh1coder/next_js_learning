@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-col  w-full flex-wrap justify-center items-center">
       <Hero content="Users List" />
       <ul>
         <Link href="/users/Hitesh">

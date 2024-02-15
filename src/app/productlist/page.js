@@ -19,12 +19,10 @@ export default function Page() {
       <h1 className="text-3xl text-center my-4">
         Product List from Client Component
       </h1>
-      <div
-        className={` flex w-full h-full flex-wrap gap-4  justify-center items-center`}
-      >
+      <div className="flex w-full h-full flex-wrap gap-4  justify-center items-center">
         {product?.map((item) => (
           <div
-            className="bg-slate-50 w-72 h-60 transition-all duration-500 hover:scale-105 cursor-pointer rounded-lg text-blue-950 p-2 flex flex-col justify-center items-center"
+            className="bg-slate-50 w-72 h-60 transition-all duration-500 hover:scale-105 rounded-lg text-blue-950 p-2 flex flex-col justify-center items-center"
             key={item.id}
           >
             <Image
